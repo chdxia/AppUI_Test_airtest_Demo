@@ -1,2 +1,5 @@
 # AppUI_Test_airtest_Demo
-这是基于airtest框架的一个UI自动化测试demo
+### 参考
+
+- airtest https://github.com/AirtestProject/Airtest
+- airtest官方文档 https://airtest.doc.io.netease.com/
