@@ -1,0 +1,2 @@
+# UITest_airtest_Demo
+这是基于airtest框架的一个UI自动化测试demo
