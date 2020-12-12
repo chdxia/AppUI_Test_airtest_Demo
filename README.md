@@ -12,7 +12,7 @@
 
 - mac在本地部署的环境运行airtest报错：PermissionError: [Errno 13] Permission denied
 
-  - 原因：需要手动赋予adb可执行权限，否则执行脚本时可能遇到上诉错误。
+  - 原因：需要手动赋予adb可执行权限，否则执行脚本时可能遇到上述错误。
 
   - 解决方法：
 
