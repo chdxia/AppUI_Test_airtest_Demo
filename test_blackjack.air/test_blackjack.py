@@ -1,30 +1,33 @@
 from airtest.core.api import *
-import os
 
-auto_setup(__file__)
 
-PWD = os.path.dirname(__file__)
-PKG = "org.cocos2d.blackjack"
-APK = os.path.join(PWD, "blackjack-release-signed.apk")
-
-if PKG not in device().list_app():
-    install(APK)
+PKG = "com.example.rthk_flutter_app"
 
 stop_app(PKG)
-wake()
+home()
+
 start_app(PKG)
-sleep(2)
-touch(Template(r"tpl1499240443959.png", record_pos=(0.22, -0.165), resolution=(2560, 1536)))
+sleep(5)
 
-assert_exists(Template(r"tpl1499240472304.png", record_pos=(0.0, -0.094), resolution=(2560, 1536)), "请下注")
+touch(Template(r"tpl1607741403390.png", record_pos=(0.057, -0.651), resolution=(720, 1560)))
 
+touch(Template(r"tpl1607741494244.png", record_pos=(0.008, -0.692), resolution=(720, 1560)))
 
-p = wait(Template(r"tpl1499240490986.png", record_pos=(-0.443, -0.273), resolution=(2560, 1536)))
+touch(Template(r"tpl1607741541458.png", record_pos=(0.375, -0.774), resolution=(720, 1560)))
 
-touch(p)
+touch(Template(r"tpl1607741561759.png", record_pos=(-0.417, -0.908), resolution=(720, 1560)))
 
-swipe(Template(r"tpl1523932626575.png", record_pos=(-0.266, 0.105), resolution=(1920, 1080)), vector=[0.0005, -0.4023])
-assert_exists(Template(r"tpl1523933150565.png", record_pos=(-0.213, 0.103), resolution=(1920, 1080)), "Swipe succeed")
+touch(Template(r"tpl1607741582928.png", record_pos=(-0.421, -0.915), resolution=(720, 1560)))
+
+swipe(Template(r"tpl1607741856846.png", record_pos=(0.062, 0.465), resolution=(720, 1560)), vector=[-0.0399, -0.4752])
+
+touch(Template(r"tpl1607741892844.png", record_pos=(-0.422, -0.915), resolution=(720, 1560)))
+
+touch(Template(r"tpl1607742021361.png", record_pos=(-0.256, 0.296), resolution=(720, 1560)))
+
+touch(Template(r"tpl1607742032690.png", record_pos=(-0.417, -0.911), resolution=(720, 1560)))
+
+touch(Template(r"tpl1607742046493.png", record_pos=(0.432, -0.91), resolution=(720, 1560)))
 
 log("Test OK")
 
